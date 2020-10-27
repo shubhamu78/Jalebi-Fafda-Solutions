@@ -1,0 +1,388 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-icon.png' %}">
+  <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>
+    Jalebi Fafda Solutions
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons  " />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css ">
+  <!-- CSS Files -->
+  <link href="{% static 'css/material-kit.css' %}" rel="stylesheet " />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="{% static 'demo/demo.css' %}" rel="stylesheet" />
+  <link href="{% static 'demo/vertical-nav.css' %}" rel="stylesheet" />
+</head>
+
+<body class="landing-page sidebar-collapse">
+  <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit-pro/index.html">
+          <p style = "font-size: 50px; font-family: 'Lobster';">Jalebi Fafda Solutions</p> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">apps</i> Components
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="../presentation.html" class="dropdown-item">
+                <i class="material-icons">line_style</i> Presentation
+              </a>
+              <a href="../index.html" class="dropdown-item">
+                <i class="material-icons">layers</i> All Components
+              </a>
+              <a href="http://demos.creative-tim.com/material-kit-pro/docs/2.1/getting-started/introduction.html" class="dropdown-item">
+                <i class="material-icons">content_paste</i> Documentation
+              </a>
+            </div>
+          </li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">view_day</i> Sections
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="../sections.html#headers" class="dropdown-item">
+                <i class="material-icons">dns</i> Headers
+              </a>
+              <a href="../sections.html#features" class="dropdown-item">
+                <i class="material-icons">build</i> Features
+              </a>
+              <a href="../sections.html#blogs" class="dropdown-item">
+                <i class="material-icons">list</i> Blogs
+              </a>
+              <a href="../sections.html#teams" class="dropdown-item">
+                <i class="material-icons">people</i> Teams
+              </a>
+              <a href="../sections.html#projects" class="dropdown-item">
+                <i class="material-icons">assignment</i> Projects
+              </a>
+              <a href="../sections.html#pricing" class="dropdown-item">
+                <i class="material-icons">monetization_on</i> Pricing
+              </a>
+              <a href="../sections.html#testimonials" class="dropdown-item">
+                <i class="material-icons">chat</i> Testimonials
+              </a>
+              <a href="../sections.html#contactus" class="dropdown-item">
+                <i class="material-icons">call</i> Contacts
+              </a>
+            </div>
+          </li> -->
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link coloor" data-toggle="dropdown">
+              <i class="material-icons">view_carousel</i> Tools
+            </a>
+            <div class="dropdown-menu dropdown-with-icons ">
+              <!-- <a href="../examples/about-us.html" class="dropdown-item">
+                <i class="material-icons">account_balance</i> About Us
+              </a> -->
+              <!-- <a href="../examples/blog-post.html" class="dropdown-item">
+                <i class="material-icons">art_track</i> Blog Post
+              </a>
+              <a href="../examples/blog-posts.html" class="dropdown-item">
+                <i class="material-icons">view_quilt</i> Blog Posts
+              </a> -->
+
+
+
+
+
+
+               <a href="{% url 'contact' %}" class="dropdown-item">
+                <i class="material-icons">location_on</i> Contact Us
+              </a>
+              <a href="#features" class="dropdown-item">
+                <i class="material-icons">view_day</i> Whois
+              </a>
+              <a href="#features" class="dropdown-item">
+                <i class="material-icons">fingerprint</i>Network Map 
+              </a>
+              <a href="#features" class="dropdown-item">
+                <i class="material-icons">attach_money</i> Email Harvesting
+              </a> 
+
+
+
+
+
+              <!-- <a href="../examples/shopping-cart.html" class="dropdown-item">
+                <i class="material-icons">shopping_basket</i> Shopping Cart
+              </a>
+              <a href="../examples/ecommerce.html" class="dropdown-item">
+                <i class="material-icons">store</i> Ecommerce Page
+              </a>
+              <a href="../examples/product-page.html" class="dropdown-item">
+                <i class="material-icons">shopping_cart</i> Product Page
+              </a>
+              <a href="../examples/profile-page.html" class="dropdown-item">
+                <i class="material-icons">account_circle</i> Profile Page
+              </a>
+              <a href="../examples/signup-page.html" class="dropdown-item">
+                <i class="material-icons">person_add</i> Signup Page
+              </a> -->
+            </div>
+          </li>
+          <!-- <li class="button-container nav-item iframe-extern">
+            <a href="https://www.creative-tim.com/product/material-kit-pro?ref=presentation" target="_blank" class="btn  btn-rose   btn-round btn-block">
+              <i class="material-icons">shopping_cart</i> Buy Now
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('/static/img/secure-data.jpg')">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          
+        </div>
+        <div class="main-content col-md-9">
+            <h1 class="title">No System is Secure.</h1>
+            <div class="textfield">
+         <form action="scan" method=post>
+         	{% csrf_token %}
+            <input type="text" id="fname" name="url" placeholder="Enter the URL">
+            </div>
+            <br>
+            <button type="submit"  class="btn btn-danger btn-raised btn-lg">
+ 			Scan it!!
+ 			</button>             
+            
+            
+        </form>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="main main-raised">
+    <div class="container">
+      <div class="section text-center">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="title" id="nm">Cybercrime</h2>
+            <h5 class="description">It is a crime that involves a computer and a network. Cybercrime may threaten a person or a nation's security and financial health. Issues surrounding these types of crimes have become high-profile, particularly those regarding hacking, copyright infringement, unwarranted mass-surveillance, sextortion, child pornography, and child grooming.</h5>
+          </div>
+        </div>
+        <div class="features" id="features">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="info shift-down">
+               
+                <div class="icon icon-danger">
+                    <i class="material-icons">fingerprint</i>
+                  </div>
+                <h3 class="info-title">Nmap</h3>
+                <p>Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses.Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-success">
+                  <i class="material-icons">verified_user</i>
+                </div>
+                
+                <h3 class="info-title">Whois</h3>
+                <p>WHOIS  is a query and response protocol that is widely used for querying databases that store the registered users or assignees of an Internet resource, such as a domain name, an IP address block or an autonomous system, but is also used for a wider range of other information. </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                  <div class="icon icon-info">
+                      <i class="material-icons">chat</i>
+                    </div>
+                <h3 class="info-title">Email harvesting</h3>
+                <p>Email harvesting is the process of obtaining lists of email addresses using various methods. Typically these are then used for bulk email or spam.Spammers have also harvested email addresses directly from Google search results, without actually spidering the websites found in the search.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section text-center">
+        <h2 class="title">Here is our team</h2>
+        <div class="team">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="{% static 'img/rsz_shubham.jpg' %}" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">Shubham Upadhyay <br>
+                    <small class="card-description text-muted">Full Stack Web Developer</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description">A full stack web developer with knowledge in advanvced Java and Android studio. Also interested in Arduino & expertise in Assembly language.</p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                      
+                    <a href="https://www.instagram.com/shubham_upadhyay_78/" class="btn btn-link btn-just-icon" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shubham-upadhyay-667766144/" class="btn btn-link btn-just-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="{% static 'img/rsz_vats.jpg' %}" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">Vatsal Khandor<br>
+                    <small class="card-description text-muted">Cyber Security Engineer</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description">A cyber security learner with interest in ethical hacking and data science. Always ready to knock new opportunities !</p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    
+                    <a href="https://www.instagram.com/vatsal.khandor/" class="btn btn-link btn-just-icon" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vatsal-khandor/" class="btn btn-link btn-just-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-player">
+                <div class="card card-plain">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <img src="{% static 'img/rsz_naman.jpg'%}" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                  </div>
+                  <h4 class="card-title">Naman Mamania<br>
+                    <small class="card-description text-muted">Full Stack Web Developer</small>
+                  </h4>
+                  <div class="card-body">
+                    <p class="card-description">A learning developer with major experience in HTML5,CSS3 & Bootstrap in frontend technologies and Django in Backend technology. Always eager to learn ! </p>
+                  </div>
+                  <div class="card-footer justify-content-center">
+                    
+                    <a href="https://www.instagram.com/namanmamania/" class="btn btn-link btn-just-icon" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/naman-mamania-6110aa192/" class="btn btn-link btn-just-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="section section-contacts">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="text-center title">Work with us</h2>
+            <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4> -->
+            <!-- <form class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Your Name</label>
+                    <input type="email" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Your Email</label>
+                    <input type="email" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
+                <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-md-4 ml-auto mr-auto text-center">
+                  <button class="btn btn-primary btn-raised">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form> -->
+          <!-- </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <footer class="footer footer-default">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="#">
+              Jalebi Fafda Solutions
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Licenses
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, made with <i class="material-icons">favorite</i> by
+        <a href="#" target="_blank">Jalebi Fafda solutions</a> for a better web.
+      </div>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script src="{% static 'js/core/jquery.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/core/bootstrap-material-design.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/plugins/moment.min.js' %}"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="{% static 'js/plugins/bootstrap-datetimepicker.js' %}" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="{% static 'js/plugins/nouislider.min.js' %}" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="{% static 'js/plugins/bootstrap-tagsinput.js' %}"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="{% static 'js/plugins/bootstrap-selectpicker.js' %}" type="text/javascript"></script>
+  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="{% static 'js/plugins/jasny-bootstrap.min.js' %}" type="text/javascript"></script>
+  <!--	Plugin for Small Gallery in Product Page -->
+  <script src="{% static 'js/plugins/jquery.flexisel.js' %}" type="text/javascript"></script>
+  <!-- Plugins for presentation and navigation  -->
+  <script src="{% static 'demo/modernizr.js' %}" type="text/javascript"></script>
+  <script src="{% static 'demo/vertical-nav.js' %}" type="text/javascript"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- {% static 'Js With init' %}ialisations For Demo Purpose, Don't Include it in Your Project -->
+  <script src="{% static 'demo/demo.js' %}" type="text/javascript"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="{% static 'js/material-kit.js' %}" type="text/javascript"></script>
+</body>
+
+</html>
